@@ -5409,6 +5409,16 @@ ZODY_TARGET_PACKAGE := $(PRODUCT_OUT)/$(ZODY_VERSION).zip
 zody: otapackage
 	$(hide) ln -f $(INTERNAL_OTA_PACKAGE_TARGET) $(ZODY_TARGET_PACKAGE)
 	$(hide) $(MD5SUM) $(ZODY_TARGET_PACKAGE) > $(ZODY_TARGET_PACKAGE).md5sum
+	echo -e "========================================================="
+	echo -e "          _____         _            _   _ ___           "
+	echo -e "          |__  /___   __| |_   _    | | | |_ _|          "
+	echo -e "            / // _ \ / _` | | | |   | | | || |           "
+	echo -e "           / /| (_) | (_| | |_| |   | |_| || |           "
+	echo -e "          /____\___/ \__,_|\__, |    \___/|___|          "
+	echo -e "                           |___/                         "
+	echo -e "                                                         "                  
+	echo -e "         Living in the moment, enjoy the peace.          "
+	echo -e "========================================================="
 	@echo "**Package complete"**: $(ZODY_TARGET_PACKAGE)"
 
 ifeq ($(BOARD_BUILD_RETROFIT_DYNAMIC_PARTITIONS_OTA_PACKAGE),true)
